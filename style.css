@@ -268,3 +268,23 @@
         padding-left: 100px
     }
 }
+
+#btnScrollToTop
+{
+    position: fixed;
+    right: 50px;
+    bottom: 75px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-color: transparent;
+    background: transparent;
+    color: gold;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop:active
+{
+    color: goldenrod;
+}

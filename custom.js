@@ -1,3 +1,11 @@
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+btnScrollToTop.addEventListener("click", function(){
+
+    $("html, body").animate({scrollTop: 0 }, "slow");
+
+});
+
 $(document).ready(function(){
     $('.customCard').on('mouseenter', function(e){
         x=e.pageX - $(this).offset().left,
@@ -17,3 +25,6 @@ $(function () {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
+
+
+  

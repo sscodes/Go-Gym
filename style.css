@@ -1,0 +1,270 @@
+.navbg.scrolled 
+{
+    background-color: black !important;
+    transition: background-color 200ms linear;
+}
+.navbarItems
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+}
+.navbarItems:hover
+{
+    font-size: 22.7px;
+    border-bottom: 4px solid white;
+}
+.doubtTxt
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    color: #404040;
+}
+
+.ftcards 
+{
+    height: 100%;
+    margin-top: 65px;
+}
+
+.ftcardstxt
+{
+    font-family: 'Poppins', sans-serif;
+    color: #404040;
+    font-size: 20px;
+}
+
+.exp
+{
+    font-size: 23px;
+}
+
+.wrking
+{
+    border: 1px solid black;
+}
+
+#sublink
+{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: red;
+    font-size: 17px;
+}
+
+.customCard
+{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.customCard span
+{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.95;
+    background: gold;
+    z-index: 1;
+    transition: width 0.5s, height 0.5s;
+}
+
+.customCard:hover span
+{
+    width: 1000px;
+    height: 1000px;
+}
+
+.customCard .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.customCard .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customCard .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.customCard .content div
+{
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+
+.customCard:hover .content div
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.box
+{
+    position: relative;
+    padding: 80px 40px 40px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.box:hover
+{
+    background-color: gold;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+
+.box p
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.box h4
+{
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box .imgBox
+{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+}
+
+.box:before
+{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-image: url(images/quotes.png);
+    background-size: cover;
+    opacity: 0.1;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box:hover:before
+{
+    transform: translateY(-60px);
+    opacity: 1;
+}
+
+.box:after
+{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    opacity: 0.1;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box:hover:after
+{
+    transform: translateY(60px);
+    opacity: 1;
+}
+
+.pointClass
+{
+    cursor: pointer;
+}
+
+.responsive
+{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.responsive iframe
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btmnav h5
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+.btmnav p
+{
+    font-size: 15px;
+    font-weight: 0;
+}
+
+.btmnav b
+{
+    font-size: 15px;
+}
+
+.btmnav ul li
+{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1199px) 
+{
+    nav.navbg
+    {
+      background-color: black ;
+    }
+}
+
+@media only screen and (min-width: 1199px) 
+{
+    .abtus
+    {
+        padding-left: 100px
+    }
+}
